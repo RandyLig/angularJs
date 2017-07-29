@@ -1,0 +1,15 @@
+<div class="wrapper">
+    <div ng-if="name">
+        <img ng-src="{{image}}" class="ta-c d-b">
+        <div class="name ta-c" ng-bind="name"></div>
+        <div class="btns d-b ta-c">
+            <button class="d-ib" ui-sref="post">已投递</button>
+            <button class="d-ib" ui-sref="favorite">收藏</button>
+            <button class="exit" ng-click="logout()">退出登录</button>
+        </div>
+    </div>
+    <div ng-hide="name">
+        <button class="goLogin" ui-sref="login">去登录</button>
+    </div>
+</div>
+<div app-footer=""></div>

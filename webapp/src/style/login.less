@@ -1,0 +1,84 @@
+.login {
+  background-image: url("../image/background.png");
+  background-repeat: no-repeat;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  form {
+    .mt(265);
+    .fs(0);
+    box-sizing: content-box;
+    input {
+      background: @formBgColor;
+      height: 100%;
+      width: 245px;
+      color: @defaultColor;
+      .fs(14);
+      border: none;
+      &::-webkit-input-placeholder {
+        color: @defaultColor;
+      }
+    }
+    .name {
+      &:first-child {
+        border-bottom: 1px @defaultColor solid;
+      }
+      background: @formBgColor;
+      margin: 0 auto;
+      .h(42);
+      .w(300);
+      .lh(42);
+      span {
+        background: @iconBgColor;
+      }
+      .account {
+        background-image: url("../image/account.png");
+        background-repeat: no-repeat;
+        background-position: 16px 10px;
+        .h(42);
+        .w(55);
+      }
+      .lock {
+        background-image: url("../image/lock.png");
+        background-repeat: no-repeat;
+        background-position: 16px 7px;
+        .h(42);
+        .w(55);
+      }
+    }
+    button {
+      .w(300);
+      .h(40);
+      border: none;
+      border-radius: 2px;
+      margin: 30px auto;
+    }
+    .login-btn {
+      background: @btnBgColorActive;
+      color: @defaultColor;
+
+    }
+    .register-btn {
+      margin-top: 15px;
+      background: @registerbtn;
+      color: @btnBgColorActive;
+    }
+    .ng-invalid {
+      &+span {
+        background: none;
+        position: absolute;
+        color: #ff0000;
+        right: 0;
+        height: 100%;
+        text-align: right;
+        font-size: 12px;
+        p {
+          margin: 0;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+<div class="register">
+    <form name="form">
+        <div class="name  d-b ta-c">
+            <span class="account d-ib f-l va-b icon"></span>
+            <input name="phone" class="d-ib ta-c" type="text" placeholder="输入用户名" validator="required,phone" ng-model="user.phone">
+        </div>
+        <div class="name  d-b ta-c">
+            <span class="lock f-l va-b d-ib icon"></span>
+            <input name="password" class="d-ib ta-c" type="password" placeholder="输入六位以上的密码" validator="required,password" ng-model="user.password">
+        </div>
+        <div class="message d-b">
+            <input name="code" class="d-ib ta-c icon" type="text" placeholder="输入验证码" ng-model="user.code" validator="required" ng-model="user.required">
+            <span class="f-r d-ib {{time?'disabled':''}}" ng-click="time?1==1:send();" ng-bind="time?time:'短信验证'"></span>
+        </div>
+        <button class="login-btn  d-b">登录</button>
+        <button class="register-btn  d-b"  validation-submit="form" ng-click="submit();">注册</button>
+    </form>
+</div>

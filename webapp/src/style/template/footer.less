@@ -1,0 +1,38 @@
+.footer {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: fixed;
+  bottom: 0;
+  height: 40px;
+  line-height: 40px;
+  left: 0;
+  right: 0;
+  font-size: 0;
+  border-top: 1px solid @footerborder;
+  li {
+    .fs(17);
+    width: 33.33%;
+    color: #9f9e9d;
+    background: @defaultColor;
+    &.select {
+      color: @highLightText;
+      background: @highLightBg;
+    }
+  }
+  .icon-document {
+    background-image: url("../../image/document.png");
+    width: 25px;
+    height: 21px;
+  }
+  .icon-search {
+    background-image: url("../../image/search.png");
+    width: 24px;
+    height: 21px;
+  }
+  .icon-my {
+    background-image: url("../../image/my.png");
+    width: 24px;
+    height: 21px;
+  }
+}
